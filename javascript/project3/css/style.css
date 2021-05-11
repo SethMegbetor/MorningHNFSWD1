@@ -1,28 +1,23 @@
 body {
   background-color: #fff6f6;
 }
-
 h1 {
   text-align: center;
 }
-
 h4 {
   font-size: 16px;
   font-weight: 700;
 }
-
 header {
   padding: 20px 0 0 0;
   background: white;
   text-align: center;
 }
-
 @media (min-width: 750px) {
   header {
     text-align: left;
   }
 }
-
 .remove {
   background-color: red;
   border-radius: 50%;
@@ -35,17 +30,14 @@ header {
 ul {
   list-style: none;
 }
-
 #hero {
   background-image: url(../img/hero.jpg);
   height: 350px;
   background-size: cover;
 }
-
 #heading {
   margin: 30px 0;
 }
-
 .submenu {
   position: relative;
 }
@@ -53,7 +45,6 @@ ul {
 .submenu #shopping-cart {
   display: none;
 }
-
 .submenu:hover #shopping-cart {
   display: block;
   position: absolute;
@@ -68,15 +59,17 @@ ul {
 
 .hero-content {
   margin-top: 80px;
-  color: #fff;
+  color: white;
 }
-
 .hero-content form {
   position: relative;
   margin-bottom: 0;
 }
-
 .hero-content form #search-course {
+  height: 50px;
+  margin-bottom: 0;
+}
+.hero-content form .submit-search-course {
   position: absolute;
   right: 0;
   top: 0;
@@ -93,11 +86,23 @@ ul {
 
 .main-bar {
   padding: 20px 0;
-  background: #741d51;
-  background: -moz-linear-gradient(left, #741d51 0%, #e44e52 100%);
-  background: -webkit-linear-gradient(left, #741d51 0%, #e44e52 100%);
-  background: linear-gradient(to right, #741d51 0%, #e44e52 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#741d51', endcolorstr='#e44e52', GradientType=1);
+  background: #741d51; /* Old browsers */
+  background: -moz-linear-gradient(
+    left,
+    #741d51 0%,
+    #e44e52 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    left,
+    #741d51 0%,
+    #e44e52 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to right,
+    #741d51 0%,
+    #e44e52 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#741d51', endColorstr='#e44e52',GradientType=1 ); /* IE6-9 */
 }
 
 .main-bar p {
@@ -112,7 +117,6 @@ ul {
   margin-bottom: 40px;
   text-align: center;
 }
-
 @media (min-width: 750px) {
   .icon {
     margin-bottom: 0;
@@ -170,4 +174,28 @@ ul {
   display: block;
   margin-bottom: 10px;
   text-decoration: none;
+}
+
+#logo-and-header {
+  display: flex;
+  /* position: absolute; */
+  top: 50%;
+}
+
+#logo-and-header > h2 {
+  font-size: 20px;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+}
+#logo {
+  vertical-align: middle;
+  padding: auto;
+  margin-right: -120px;
+  margin-bottom: 13px;
+}
+
+.column,
+.columns {
+  width: 0px;
 }
